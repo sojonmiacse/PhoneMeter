@@ -1,0 +1,312 @@
+     <!DOCTYPE html>
+     <html lang="bn">
+     <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <meta name="description"
+          content="তুমি দিনে কতটা ফোনে আসক্ত? মজার Phone Addiction Test দিয়ে নিজের স্কোর জানুন।">
+
+     <meta name="theme-color" content="#6c4df6">
+
+     <title>তুমি কতটা ফোনে আসক্ত? 😂 | FunMeter</title>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+     <link
+          href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
+
+     <link rel="stylesheet" href="style.css">
+     </head>
+
+     <body>
+
+     <main class="app">
+
+          <!-- Header -->
+          <header class="top-header">
+
+               <div class="brand">
+                    <div class="brand-icon">😂</div>
+                    <span>Phone Meter</span>
+               </div>
+
+               <div class="fun-badge">
+                    100% Fun Test
+               </div>
+
+          </header>
+
+
+          <!-- Hero -->
+          <section class="hero">
+
+               <div class="hero-decoration decoration-one"></div>
+               <div class="hero-decoration decoration-two"></div>
+
+               <div class="hero-content">
+
+                    <div class="hero-emoji">
+                         📱😂
+                    </div>
+
+                    <h1>
+                         তুমি দিনে কতটা<br>
+                         ফোনে আসক্ত?
+                    </h1>
+
+                    <p>
+                         কয়েকটি মজার প্রশ্নের উত্তর দাও।
+                         শেষে দেখো—ফোন ব্যবহার করো,
+                         নাকি ফোনই তোমাকে ব্যবহার করে! 😜
+                    </p>
+
+               </div>
+
+          </section>
+
+
+          <!-- Quiz Card -->
+          <section class="card quiz-card" id="quizCard">
+
+               <!-- Progress -->
+               <div class="progress-header">
+
+                    <span id="stepText">
+                         প্রশ্ন ১ / ৮
+                    </span>
+
+                    <span id="percentText">
+                         0%
+                    </span>
+
+               </div>
+
+               <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+               </div>
+
+
+               <!-- Question -->
+               <div
+                    class="question"
+                    id="question">
+               </div>
+
+
+               <!-- Options -->
+               <div
+                    class="options"
+                    id="options">
+               </div>
+
+
+               <!-- Navigation -->
+               <div class="quiz-actions">
+
+                    <button
+                         type="button"
+                         class="btn btn-secondary"
+                         id="backBtn">
+
+                         ← আগের প্রশ্ন
+
+                    </button>
+
+                    <button
+                         type="button"
+                         class="btn btn-primary"
+                         id="nextBtn"
+                         disabled>
+
+                         পরের প্রশ্ন →
+
+                    </button>
+
+               </div>
+
+          </section>
+
+
+          <!-- Loading -->
+          <section
+               class="card loading-card hidden"
+               id="loadingCard">
+
+               <div class="loader"></div>
+
+               <h2 id="loadingTitle">
+                    আপনার ফোন-জীবন বিশ্লেষণ হচ্ছে... 🤖
+               </h2>
+
+               <p id="loadingText">
+                    আপনি মানুষ, নাকি ফোনের চার্জার—
+                    তা যাচাই করা হচ্ছে!
+               </p>
+
+          </section>
+
+
+          <!-- Result -->
+          <section
+               class="card result-card hidden"
+               id="resultCard">
+
+               <div
+                    class="result-emoji"
+                    id="resultEmoji">
+                    📱
+               </div>
+
+               <h2 id="resultTitle">
+                    আপনার ফলাফল
+               </h2>
+
+               <p
+                    class="result-subtitle"
+                    id="resultSub">
+               </p>
+
+
+               <!-- Score -->
+               <div
+                    class="score-ring"
+                    id="scoreRing">
+
+                    <div class="score-content">
+
+                         <span id="score">
+                         0%
+                         </span>
+
+                         <small>
+                         Phone Addiction
+                         </small>
+
+                    </div>
+
+               </div>
+
+
+               <!-- Result Message -->
+               <div class="result-message">
+
+                    <h3 id="resultLabel">
+                    </h3>
+
+                    <p id="resultMessage">
+                    </p>
+
+               </div>
+
+
+               <!-- Share -->
+               <div class="share-section">
+
+                    <h3>
+                         😎 বন্ধুদেরও দেখাও!
+                    </h3>
+
+                    <p>
+                         তোমার ফলাফল সোশ্যাল মিডিয়ায় শেয়ার করো।
+                    </p>
+
+
+                    <button
+                         type="button"
+                         class="share-main"
+                         id="shareNative">
+
+                         📤 ফলাফল শেয়ার করুন
+
+                    </button>
+
+
+                    <div class="share-grid">
+
+                         <button
+                         type="button"
+                         class="share-btn facebook"
+                         id="shareFacebook">
+
+                         <span>f</span>
+                         Facebook
+
+                         </button>
+
+
+                         <button
+                         type="button"
+                         class="share-btn whatsapp"
+                         id="shareWhatsapp">
+
+                         <span>◉</span>
+                         WhatsApp
+
+                         </button>
+
+
+                         <button
+                         type="button"
+                         class="share-btn other"
+                         id="shareOther">
+
+                         <span>↗</span>
+                         অন্যান্য
+
+                         </button>
+
+
+                         <button
+                         type="button"
+                         class="share-btn copy"
+                         id="copyResult">
+
+                         <span>⧉</span>
+                         কপি করুন
+
+                         </button>
+
+                    </div>
+
+               </div>
+
+
+               <!-- Restart -->
+               <div class="restart-container">
+
+                    <button
+                         type="button"
+                         class="btn btn-secondary"
+                         id="restartBtn">
+
+                         🔄 আবার টেস্ট দিন
+
+                    </button>
+
+               </div>
+
+          </section>
+
+
+          <!-- Footer -->
+          <footer class="sojon-link">
+               <a href="https://www.facebook.com/sojonmiacse">Fun with Sojon</a> 😂 — মজা করুন, বন্ধুদের সঙ্গে শেয়ার করুন।
+          </footer>
+
+     </main>
+
+
+     <!-- Toast -->
+     <div
+          class="toast"
+          id="toast">
+     </div>
+
+
+     <script src="script.js"></script>
+
+     </body>
+     </html>
